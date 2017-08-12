@@ -1,7 +1,7 @@
 import random
 from time import sleep
 import numpy
-
+#
 def get_int(num):
     while True:
         try:
@@ -13,10 +13,10 @@ def get_int(num):
         except ValueError as err:
             print(err)
 
-num = get_int("введите число: ")
-print("ввели число ", num)
+num = get_int("enter number: ")
+print("your entered number is ", num)
 rand_num =  random.randint(1,50)
-print("случайное чило ", rand_num)
+print("random number ", rand_num)
 
 sleep(5)
 #numpy.random.rand(1,5)
@@ -24,8 +24,8 @@ country = ["ukraine", "russia", "germany", "spain"]
 
 if rand_num  > num :
     while rand_num  > num:
-        print("страны ", country)
+        print("country ", country)
         print(num)
         num += 1
 elif num >= rand_num:
-        print("число больше или равно")
+        print("your number bigger or equally")
