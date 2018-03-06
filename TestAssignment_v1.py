@@ -10,3 +10,6 @@ os.chdir(user_path)
 user_path = os.getcwd()
 print("Current dir %s" % user_path)
 
+f = open('text.txt','r')
+
+f.close()
